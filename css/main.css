@@ -692,10 +692,14 @@ a {
         background-color: white;
     }
 }
+
 @keyframes go-up {
-    0%,100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-5px);
     }
@@ -1544,15 +1548,17 @@ a {
 /* start files  */
 .container {
     flex-wrap: wrap;
-    
+
 }
+
 @media (max-width:767px) {
     .file-state {
-     margin: 0 auto;
+        margin: 0 auto;
     }
 }
+
 .files-page {
-    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     position: relative;
     flex: 1;
@@ -1563,23 +1569,23 @@ a {
     height: fit-content;
 }
 
-.files-page .box > i {
+.files-page .box>i {
     top: 10px;
     left: 10px;
     padding-right: 10px;
     cursor: pointer;
 }
 
-.files-page .box > img {
+.files-page .box>img {
     margin: 30px auto 0;
 }
 
-.files-page .box > p {
+.files-page .box>p {
     font-weight: bold;
     font-size: 14px;
 }
 
-.files-page .box > span {
+.files-page .box>span {
     margin-left: 0px;
     font-size: 14px;
     padding-bottom: 10px;
@@ -1594,52 +1600,60 @@ a {
     font-size: 14px;
     display: inline-block;
 }
+
 .file-state {
     /* position: relative; */
     width: 280px;
 }
+
 .file-state .title {
     width: 80px;
-    font-size: 15px;    
+    font-size: 15px;
 }
+
 .file-state .size {
     width: 50px;
     position: relative;
     font-size: 20px;
 
 }
+
 .file-state li {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-top: 10px;
 }
+
 .file-state .icon-pdf {
     background-color: rgb(0 117 255 / 20%);
-    width:35px;
+    width: 35px;
     height: 30px;
     text-align: center;
     display: flex;
     align-items: center;
 }
+
 .file-state .icon-images {
     background-color: rgb(34 197 94 / 20%);
-    width:35px;
+    width: 35px;
     height: 30px;
     text-align: center;
     display: flex;
     align-items: center;
 }
+
 .file-state .icon-word {
     background-color: rgb(255 0 0 / 20%);
-    width:35px;
+    width: 35px;
     height: 30px;
     text-align: center;
     display: flex;
     align-items: center;
 }
+
 .file-state .icon-csv {
     background-color: rgb(245 158 11 / 20%);
-    width:35px;
+    width: 35px;
     height: 30px;
     text-align: center;
     display: flex;
@@ -1649,100 +1663,116 @@ a {
 .pdf {
     color: var(--blue-color);
 }
+
 .csv {
     color: var(--orange-color);
 }
+
 .word {
     color: var(--red-color);
 }
+
 .images {
     color: var(--green-color);
     margin-left: -3px;
 }
+
 .file-state a {
     transition: 0.3s;
     padding: 10px 15px;
-    
+
 }
+
 .file-state a:hover {
     background-color: var(--blue-alt-color);
 }
-.file-state a:hover i{
-animation-name: go-up;
-animation-duration: 0.5s;
-animation-iteration-count: infinite;
+
+.file-state a:hover i {
+    animation-name: go-up;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
+
 /* end files  */
 /* start plans */
 .plans-page .container {
-    grid-template-columns: repeat(auto-fill, minmax(400px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
-.plans-page .container .green .title  {
+
+.plans-page .container .green .title {
     border: 4px solid white;
     position: relative;
     padding: 10px;
     outline: var(--green-color) solid 5px;
 }
-.plans-page .container .blue .title  {
+
+.plans-page .container .blue .title {
     border: 4px solid white;
     position: relative;
     padding: 10px;
     outline: var(--blue-color) solid 5px;
 }
-.plans-page .container .orange .title  {
+
+.plans-page .container .orange .title {
     border: 4px solid white;
     position: relative;
     padding: 10px;
     outline: var(--orange-color) solid 5px;
 }
 
-.plans-page .container .box .title > span {
+.plans-page .container .box .title>span {
     position: relative;
 }
-.plans-page .container .box .title > span::before    {
+
+.plans-page .container .box .title>span::before {
     content: "$";
     font-size: 18px;
     position: absolute;
     top: -10px;
     left: -15px;
 }
+
 .plans-page .container .box ul {
     padding: 20px 0 10px;
 }
+
 .plans-page .container .box li {
     font-weight: bold;
     padding: 0px 0px 15px 0px;
     justify-content: unset;
 }
+
 .plans-page .container .box li i.icon {
     color: var(--gray-color);
     position: absolute;
     right: 0;
     flex-grow: 1;
-    background-color: white ;
+    background-color: white;
 }
-.plans-page .container .box. li i.icon {
-    
-}
+
+.plans-page .container .box. li i.icon {}
+
 .plans-page .container .box li i.green {
     color: var(--green-color);
     margin-right: 10px;
 }
+
 .plans-page .container .box li i.red {
     color: var(--red-color);
     margin-right: 10px;
 }
 
 .plans-page .container .box a {
-        display: block;
-        width: fit-content;
-        margin-right: auto;
-        margin-top: -15px;
+    display: block;
+    width: fit-content;
+    margin-right: auto;
+    margin-top: -15px;
 }
 
 .plans-page .container .box.orange p:nth(:last-of-type) {
-        margin: -15px auto 0;
-    
+    margin: -15px auto 0;
+
 }
+
 /* end plans */
